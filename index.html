@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="../Convert Money/style.css" rel="stylesheet">
+    <title>Convert Money</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+
+        <!--Conteúdo principal-->
+        <main>
+            <!-- LABEL são : Rótulos servem para informar pra que serve cada campo do Formulário  -->
+            <label>
+                Converter <b>de</b> 
+                <select>
+                    <option>
+                        R$ Real brasileiro
+                    </option>
+
+                </select>
+
+            </label>
+
+            <label>
+                Converter <b>Para</b>
+
+                <select id="currency-select">
+                    <option>
+                        US$ Dólar americano
+                    </option>
+
+                    <option>
+                        Є Euro
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <label>
+                Valor
+                <input id="input-real" placeholder="R$10.000,00">
+                </input>
+
+            </label>
+            <button id="convert-button" type="button">Converter</button>
+
+            <section>
+                <div class="currency-container">
+                    <img src="img/brasil 2.svg" alt="bandeira-do-Brasil">
+                    <p class="currency-name"> Real</p>
+                    <p class="current-value" id="real-value-text"> R$10.000,00</p>
+                </div>
+
+        
+
+                <div class="currency-container">
+                    <img src="img/eua.svg" id="currency-img" alt="bandeira-país-conversão">
+                    <p class="currency-name"id="currency-names" >Dolár americano</p>
+                    <p class="current-value" id="currency-value-text"> US$2.000</p>
+                </div>
+
+             
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+<script src="../Convert Money/script.js"></script>
+
+</html>
